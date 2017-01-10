@@ -1,2 +1,3 @@
 # Front-start.github.io
-Макет HTML Academy 
+Макет HTML Academy <br>
+https://front-start.github.io/Nerds/
