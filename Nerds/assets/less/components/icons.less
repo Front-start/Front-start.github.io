@@ -1,0 +1,121 @@
+//adding icon fonts, icon sprite sheets
+.socbuttions a {
+    margin: 20px 0;
+    color: #fff;
+    background-color: #e1e1e1;
+    display: inline-block;
+    font-size: 1.4375em;
+    width: 2.8em;
+    line-height: 2.8;
+    text-align: center;
+    border: 0;
+    .rounded(32px);
+    &:hover {
+        background-color: #d6494d;
+        .transition(ease-in);
+    }
+    &:active {
+        background-color: #b63538;
+        .box-shadow(inset 0px 3px 0px 0px rgba(0, 0, 0, 0.2));
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &+a {
+        margin-left: 20px;
+    }
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    font-weight: normal;
+    line-height: 1em;
+    font-family: "symbols";
+    text-align: center;
+    text-transform: none;
+    text-decoration: inherit;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+}
+
+.icon-basket::before {
+    content: "\62";
+}
+
+
+/* "b" */
+
+.icon-facebook::before {
+    content: "\66";
+}
+
+
+/* "f" */
+
+.icon-twitter::before {
+    content: "\74";
+}
+
+
+/* "t" */
+
+.icon-vk::before {
+    content: "\76";
+}
+
+
+/* "v" */
+
+.icon-up-dir::before {
+    content: "\25b2";
+}
+
+
+/* "▲" */
+
+.icon-down-dir::before {
+    content: "\25bc";
+}
+
+
+/* "▼" */
+
+.icon-circle::before {
+    content: "\25cb";
+}
+
+
+/* "○" */
+
+.icon-circle-dot::before {
+    content: "\25cf";
+}
+
+
+/* "●" */
+
+.icon-check-off::before {
+    content: "\2610";
+}
+
+
+/* "☐" */
+
+.icon-check-on::before {
+    content: "\2611";
+}
+
+
+/* "☑" */
+
+.icon-instagramm::before {
+    content: "📷";
+}
+
+
+/* "\1f4f7" */

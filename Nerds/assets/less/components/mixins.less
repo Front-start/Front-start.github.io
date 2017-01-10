@@ -1,0 +1,70 @@
+//use http://www.font2web.com to generate all font formats
+.add-font(@font-url, @font-name, @font-weight: 400, @font-style: normal) {
+    font-family: @font-name;
+    src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes 
+    src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
+    url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers 
+    url('@{font-folder}@{font-url}.ttf') format('truetype'), // Safari, Android, iOS 
+    url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS  
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+.transition(@prop: all,
+@time: 0.3s,
+@ease: ease-in-out) {
+    transition: @prop @time @ease;
+}
+
+.bg-img(@img,
+@pos: center center,
+@att: scroll) {
+    background-image: url('@{img-folder}@{img}');
+    background-position: @pos;
+    background-repeat: no-repeat;
+    background-attachment: @att;
+}
+
+.ff(@font,
+@zamena1) when (@zamena1 =ss) {
+    font-family: '@{font}',
+    'Arial',
+    sans-serif;
+}
+
+.ff(@font,
+@zamena1) when (@zamena1 =s) {
+    font-family: '@{font}',
+    'Times New Roman',
+    serif;
+}
+
+.placeholder-color(@color) {
+    &::-webkit-input-placeholder {
+        color: @color;
+    }
+    &::-moz-placeholder {
+        color: @color;
+    }
+    &:-ms-input-placeholder {
+        color: @color;
+    }
+    &::placeholder {
+        color: @color;
+    }
+}
+
+.ellipsis() {
+    &[placeholder] {
+        text-overflow: ellipsis;
+    }
+    &::-moz-placeholder {
+        text-overflow: ellipsis;
+    }
+    &:-moz-placeholder {
+        text-overflow: ellipsis;
+    }
+    &:-ms-input-placeholder {
+        text-overflow: ellipsis;
+    }
+}
