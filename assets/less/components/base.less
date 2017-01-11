@@ -1,8 +1,8 @@
 //basic tags and general rules
 body {
-    min-width: 700px;
+    min-width: 500px;
     width: auto !important;
-    width: 700px;
+    width: 500px;
     background-color: #fff;
     font-size: 16px;
     .ff('Roboto Medium', ss);
@@ -37,14 +37,12 @@ hr {
     border: 0;
     height: 2px;
     background-color: @gray;
-    @media (max-width: 1200px) {
-        width: 900px;
-    }
+    max-width: 900px;
     @media (max-width: 992px) {
-        width: 900px;
+        width: 680px;
     }
     @media (max-width: 768px) {
-        width: 680px;
+        width: 90%;
     }
     margin-right: auto;
     margin-left: auto;
@@ -57,11 +55,12 @@ ul {
     color: #283136;
 }
 
-.main ul {
-    line-height: 3;
+.ul-red {
+    line-height: 1.3;
     li {
         padding-left: 2.25em;
         position: relative;
+        margin: 1.5625em 0;
         &:after {
             content: '';
             position: absolute;
@@ -99,6 +98,9 @@ header {
         padding-top: 26px;
         .logo {
             float: left;
+            @media(max-width: 660px) {
+                display: none;
+            }
         }
         ul {
             line-height: inherit;
@@ -165,10 +167,19 @@ header {
             }
         }
     }
+    .title {
+        margin: 20px auto;
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            padding: 0 10%;
+            text-align: center;
+        }
+    }
 }
 
 footer {
-    padding-top: 80px;
+    padding-top: 40px;
     .container {
         .address {
             background-color: #fff;
@@ -189,6 +200,9 @@ footer {
         }
         @media (max-width: 768px) {
             background-position-x: -370px;
+        }
+        @media (max-width: 660px) {
+            background-position-x: -520px;
         }
         &:after {
             content: '';
@@ -221,4 +235,8 @@ footer {
             }
         }
     }
+}
+
+hr+footer {
+    padding-top: 80px;
 }
