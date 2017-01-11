@@ -3,14 +3,6 @@
 
     $(document).ready(function () {
 
-        $('a').click(function () {
-            if (event.preventDefault) {
-                event.preventDefault();
-            } else {
-                event.returnValue = false;
-            }
-        });
-
         $(".close-modal").click(function () {
             if (event.preventDefault) {
                 event.preventDefault();
