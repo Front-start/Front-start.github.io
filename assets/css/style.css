@@ -1953,7 +1953,8 @@ tbody.collapse.in {
     background: #fff;
     color: #000;
     padding: 5px;
-    text-align: center behavior: url(/assets/ie8-support/PIE.htc);
+    text-align: center;
+    behavior: url(/assets/ie8-support/PIE.htc);
 }
 
 .noUi-horizontal .noUi-tooltip {
@@ -2500,7 +2501,6 @@ hr+footer {
     display: inline-block;
     vertical-align: middle;
     margin-top: 15px;
-    behavior: url(/assets/ie8-support/PIE.htc);
     behavior: url(assets/ie8-support/PIE.htc);
     position: relative;
     z-index: 0;
@@ -2777,11 +2777,13 @@ form[name=filter] .slider-container input {
     background-color: #f1f1f1;
     border: 0;
     border-radius: 3px;
-    text-align: center behavior: url(/assets/ie8-support/PIE.htc);
+    text-align: center;
+    display: inline-block;
+    behavior: url(/assets/ie8-support/PIE.htc);
 }
 
 form[name=filter] .slider-container p {
-    display: inline;
+    display: inline-block;
     padding-right: 10px
 }
 
