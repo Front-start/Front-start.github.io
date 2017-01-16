@@ -2773,13 +2773,14 @@ form[name=filter] .slider-container .slider-bg {
 
 form[name=filter] .slider-container input {
     width: 80px;
-    line-height: 0.42105263;
+    line-height: 2.375em;
     height: 2.375em;
     background-color: #f1f1f1;
     border: 0;
     border-radius: 3px;
     text-align: center;
     display: inline-block;
+    vertical-align: middle;
     behavior: url(/assets/ie8-support/PIE.htc);
 }
 
