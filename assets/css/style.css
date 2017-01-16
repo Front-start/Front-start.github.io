@@ -2767,7 +2767,8 @@ form[name=filter] .slider-container .slider-bg {
     height: 80px;
     padding: 40px 30px;
     background-color: #f1f1f1;
-    border-radius: 3px behavior: url(/assets/ie8-support/PIE.htc);
+    border-radius: 3px;
+    behavior: url(/assets/ie8-support/PIE.htc);
 }
 
 form[name=filter] .slider-container input {
