@@ -2,7 +2,6 @@
     'use strict';
 
     $(document).ready(function () {
-
         $(".close-modal").click(function () {
             if (event.preventDefault) {
                 event.preventDefault();
